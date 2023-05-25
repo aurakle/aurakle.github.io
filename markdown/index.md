@@ -33,4 +33,4 @@
 
 ## Details
 
-<img src="https://github.com/StellarWitch7/StellarWitch7/github-metrics.svg" alt="Metrics" align="top" />
+[![Metrics](https://raw.githubusercontent.com/StellarWitch7/StellarWitch7/main/github-metrics.svg)](https://github.com/StellarWitch7/StellarWitch7)
