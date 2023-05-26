@@ -16,10 +16,11 @@ jobs:
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: markdown
+          output_dir: action-output
           build_html: true
           build_pdf: false
           theme: theme.css
-      - uses: actions/upload-artifact@v1
-        with:
-          name: HTML
-          path: action-output
+      #- uses: actions/upload-artifact@v1
+      #  with:
+      #    name: HTML
+      #    path: action-output
