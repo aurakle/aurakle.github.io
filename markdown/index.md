@@ -25,7 +25,6 @@
 
 - [Earthguard](https://github.com/StellarWitch7/Earthguard), a 1.19.2 Fabric Minecraft mod. 
 - [The Evergreen Project](https://github.com/StellarWitch7/The-Evergreen-Project), a WPF app to facilitate the creation of choose-your-own-adventure games. 
-- [The Unnamed](https://github.com/StellarWitch7/Unnamed), a console application for reading the Evergreen Project's exported JSON files. 
 
 ## Archived Projects
 
