@@ -3,12 +3,12 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - working
+      - main, working
     paths:
       - 'markdown/**.md'
 
 jobs:
-  converttopdf:
+  converttohtml:
     name: Build HTML
     runs-on: ubuntu-latest
     steps:
@@ -18,7 +18,7 @@ jobs:
           input_dir: markdown
           output_dir: action-output
           build_html: true
-          build_pdf: false
+          build_pdf: true
           theme: theme.css
       - uses: actions/upload-artifact@v1
         with:
