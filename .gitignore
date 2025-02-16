@@ -1,5 +1,6 @@
 site
 _cache
+dist-newstyle
 
 # direnv
 .direnv/
