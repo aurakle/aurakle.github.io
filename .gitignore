@@ -1,0 +1,6 @@
+site
+_cache
+
+# direnv
+.direnv/
+.envrc
