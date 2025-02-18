@@ -1,14 +1,14 @@
-html, body:has(.main) {
+html, body {
     background-image: url('/images/background.jpg');
     height: 100%;
 }
 
-body .main {
+body #main {
     background-image: none;
     background-color: #282c34;
     min-height: 100%;
 }
 
-body .main div {
+body #main div {
     padding: 1rem;
 }
