@@ -35,6 +35,10 @@ footer {
     top: -3px;
 }
 
+code {
+    background-color: rgba(150, 150, 150, 0.5);
+}
+
 nav {
     text-align: right;
     margin: 0;

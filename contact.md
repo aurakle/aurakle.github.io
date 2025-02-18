@@ -2,4 +2,4 @@
 title: Contact
 ---
 
-WIP
+I can be reached through my e-mail at [aurora.dawn@trans.fish](mailto:aurora.dawn@trans.fish) or on Discord via `@stellarwitch7`.
