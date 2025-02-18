@@ -12,11 +12,11 @@ config = defaultConfiguration
 
 main :: IO ()
 main = hakyllWith config $ do
-    match "images/**" $ do
+    match ("images/**" .||. "js/**") $ do
         route   idRoute
         compile copyFileCompiler
 
-    match "css/*" $ do
+    match "css/**" $ do
         route   idRoute
         compile compressCssCompiler
 
@@ -41,6 +41,15 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
+
+    create ["css/default.css"] $ do
+        route idRoute
+        compile $ do
+            cssFiles <- loadAll "css/default/*"
+            let styleCtx = listField "items" defaultContext (return cssFiles)
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/concat.txt" styleCtx
 
     create ["projects.html"] $ do
         route idRoute
@@ -67,7 +76,7 @@ main = hakyllWith config $ do
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/writings.html" writingsCtx
-                >>= loadAndApplyTemplate "templates/default.html" writingsCtx
+                >>= loadAndApplyTemplate "templates/default.html"  writingsCtx
                 >>= relativizeUrls
 
     match "index.html" $ do
@@ -85,7 +94,6 @@ main = hakyllWith config $ do
 
 projectCtx :: Context String
 projectCtx =
-    -- teaserField "teaser" "content" `mappend`
     defaultContext
 
 postCtx :: Context String
