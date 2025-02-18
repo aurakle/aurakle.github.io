@@ -30,6 +30,11 @@ footer {
     flex-grow: 1;
 }
 
+.button-gallery img:hover {
+    position: relative;
+    top: -3px;
+}
+
 nav {
     text-align: right;
     margin: 0;
