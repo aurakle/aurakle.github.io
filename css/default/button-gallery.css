@@ -1,0 +1,8 @@
+.button-gallery img {
+    image-rendering: pixelated;
+}
+
+.button-gallery img:hover {
+    position: relative;
+    top: -3px;
+}

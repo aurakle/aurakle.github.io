@@ -1,0 +1,11 @@
+html, body:has(div) {
+    background-image: url('/images/background.jpg');
+    height: 100%;
+}
+
+body div {
+    background-image: none;
+    background-color: #282c34;
+    height: 100%;
+    padding: 1rem;
+}
