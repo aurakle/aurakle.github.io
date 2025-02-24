@@ -12,6 +12,4 @@ To refer to this site, you may embed the following HTML:
 ```
 Here's what it looks like!
 
-<div class="button-gallery">
-    <a href="https://stellarwitch7.github.io" target="_blank"><img src="/images/buttons/mine.png" alt="The Starwatch"/></a>
-</div>
+<div class="button-gallery"><a href="/"><img src="/images/buttons/mine.png" alt="The Starwatch"/></a></div>
