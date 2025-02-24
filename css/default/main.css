@@ -57,6 +57,11 @@ sub {
     font-size: 1.2rem;
 }
 
+sub p {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
 article .header {
     font-size: 1.4rem;
     font-style: italic;
