@@ -13,15 +13,15 @@ config = defaultConfiguration
 main :: IO ()
 main = hakyllWith config $ do
     match ("images/**" .||. "js/**") $ do
-        route   idRoute
+        route idRoute
         compile copyFileCompiler
 
     match "css/**" $ do
-        route   idRoute
+        route idRoute
         compile compressCssCompiler
 
-    match (fromList ["about.md", "contact.md"]) $ do
-        route   $ setExtension "html"
+    match "*.md" $ do
+        route $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
@@ -79,18 +79,23 @@ main = hakyllWith config $ do
                 >>= loadAndApplyTemplate "templates/default.html"  writingsCtx
                 >>= relativizeUrls
 
-    match "index.html" $ do
-        route idRoute
-        compile $ do
-            getResourceBody
-                >>= applyAsTemplate defaultContext
-                >>= loadAndApplyTemplate "templates/default.html" defaultContext
-                >>= relativizeUrls
+    -- match "index.html" $ do
+    --     route idRoute
+    --     compile $ do
+    --         getResourceBody
+    --             >>= applyAsTemplate defaultContext
+    --             >>= loadAndApplyTemplate "templates/default.html" defaultContext
+    --             >>= relativizeUrls
 
     match "templates/*" $ compile templateBodyCompiler
 
 
 --------------------------------------------------------------------------------
+
+-- myPandocCompiler :: Compiler (Item String)
+-- myPandocCompiler =
+--     pandocCompilerWithTransformM defaultHakyllReaderOptions myWriter
+--     (usingSidenotes)
 
 projectCtx :: Context String
 projectCtx =
