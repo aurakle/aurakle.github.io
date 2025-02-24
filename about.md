@@ -14,8 +14,8 @@ A proud [NixOS](https://nixos.org), [Neovim](https://neovim.io), and [i3](https:
 
 ### toki pona
 
-lukin mun ni li sinpin pi pilin lawa mi. taso ken la sina wile sona e *mi*. toki ni li ike, taso mi alasa pana e sona pona.
+lukin mun ni li sinpin pi sitelen lawa mi. taso ken la sina wile sona e *mi*. toki ni li ike, taso mi alasa pana e sona pona.
 
-mi jan Owa. mi meli tonsi pi ma Kanata. mi pilin pona tan toki pi pali ilo en toki musi en lipu musi. ken la mi musi e sitelen tawa musi. mi toki e toki Inli. mi toki lili e toki Kanse e toki pona kin.
+mi jan Owa. mi meli tonsi pi ma Kanata. mi pilin pona tan toki pi ilo nanpa en pali pi lipu musi en lipu musi. ken la mi musi e sitelen tawa musi. mi toki e toki Inli. mi toki lili e toki Kanse e toki pona kin.
 
-mi pali pona kepeken ilo [NixOS](https://nixos.org) en ilo toki [Neovim](https://neovim.io) en ilo sitelen [i3](https://i3wm.org). mi pali ike kepeken ilo Windows la mi pali ala kepeken ona lon mi wile wawa ala e ona.
+mi pali pona kepeken ilo [NixOS](https://nixos.org) en ilo toki [Neovim](https://neovim.io) en ilo sitelen [i3](https://i3wm.org). mi pali ike tan ilo Windows la mi pali ala kepeken ona lon mi wile wawa ala e ona.
