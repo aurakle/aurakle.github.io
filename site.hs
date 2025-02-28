@@ -79,6 +79,11 @@ main = hakyllWith config $ do
                 >>= loadAndApplyTemplate "templates/default.html"  writingsCtx
                 >>= relativizeUrls
 
+    create [".nojekyll"] $ do
+        route idRoute
+        compile $ do
+            makeItem ""
+
     -- match "index.html" $ do
     --     route idRoute
     --     compile $ do
