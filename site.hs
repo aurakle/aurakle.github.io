@@ -79,28 +79,17 @@ main = hakyllWith config $ do
                 >>= loadAndApplyTemplate "templates/default.html"  writingsCtx
                 >>= relativizeUrls
 
+    -- GH Pages stupid
     create [".nojekyll"] $ do
         route idRoute
         compile $ do
             makeItem ""
-
-    -- match "index.html" $ do
-    --     route idRoute
-    --     compile $ do
-    --         getResourceBody
-    --             >>= applyAsTemplate defaultContext
-    --             >>= loadAndApplyTemplate "templates/default.html" defaultContext
-    --             >>= relativizeUrls
+                >>= relativizeUrls
 
     match "templates/*" $ compile templateBodyCompiler
 
 
 --------------------------------------------------------------------------------
-
--- myPandocCompiler :: Compiler (Item String)
--- myPandocCompiler =
---     pandocCompilerWithTransformM defaultHakyllReaderOptions myWriter
---     (usingSidenotes)
 
 projectCtx :: Context String
 projectCtx =
