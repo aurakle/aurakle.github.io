@@ -1,6 +1,6 @@
 ---
-author: StellarWitch7
-github: https://github.com/StellarWitch7/connectr
+author: aurakle
+github: https://github.com/aurakle/connectr
 desc: A standalone chat server
 ---
 

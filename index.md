@@ -8,7 +8,7 @@ If you use [Dark Reader](https://darkreader.org) or a similar extension, conside
 
 To refer to this site, you may embed the following HTML:
 ```html
-<a href="https://stellarwitch7.github.io" target="_blank"><img src="https://stellarwitch7.github.io/images/buttons/mine.png" alt="The Starwatch"/></a>
+<a href="https://aurakle.github.io" target="_blank"><img src="https://aurakle.github.io/images/buttons/mine.png" alt="The Starwatch"/></a>
 ```
 Here's what it looks like!
 <div class="button-gallery"><a href="/"><img src="/images/buttons/mine.png" alt="The Starwatch"/></a></div>
