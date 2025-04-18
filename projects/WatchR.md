@@ -1,6 +1,6 @@
 ---
-author: StellarWitch7
-github: https://github.com/StellarWitch7/watchr
+author: aurakle
+github: https://github.com/aurakle/watchr
 desc: A P2P command line application for watching arbitrary videos with friends
 ---
 
