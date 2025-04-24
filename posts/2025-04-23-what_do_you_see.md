@@ -1,6 +1,6 @@
 ---
 title: What do you see?
-tags: poetry
+tags: poem
 ---
 
 What do you see, when you look at me?<br/>
@@ -19,4 +19,4 @@ My mind is sharp and splintered<br/>
 But that is not what I put forth<br/>
 My soul is torn and worn<br/>
 But what does it matter<br/>
-***When you won't tell me what you see?***<br/>
+***When you won't tell me what you see?***

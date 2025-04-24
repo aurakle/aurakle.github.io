@@ -40,7 +40,7 @@ main = hakyllWith config $ do
         let title = "Posts tagged \"" ++ tag ++ "\""
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll pattern
+            posts <- loadAll pattern
             let ctx =
                     constField "title" title                                `mappend`
                     listField "posts" (postCtxWithTags tags) (return posts) `mappend`
