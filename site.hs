@@ -34,13 +34,33 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/default.html" projectCtx
             >>= relativizeUrls
 
+    -- build up tags
+    tags <- buildTags "posts/*" (fromCapture "tags/*.html")
+    tagsRules tags $ \tag pattern -> do
+        let title = "Posts tagged \"" ++ tag ++ "\""
+        route idRoute
+        compile $ do
+            posts <- recentFirst =<< loadAll pattern
+            let ctx =
+                    constField "title" title                                `mappend`
+                    listField "posts" (postCtxWithTags tags) (return posts) `mappend`
+                    defaultContext
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/tag.html"     ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
+
     match "posts/*" $ do
         route $ setExtension "html"
-        compile $ pandocCompiler
-            >>= saveSnapshot "content"
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
-            >>= relativizeUrls
+        compile $ do
+            let ctx = postCtxWithTags tags
+
+            pandocCompiler
+                >>= saveSnapshot "content"
+                >>= loadAndApplyTemplate "templates/post.html"    ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
 
     create ["css/default.css"] $ do
         route idRoute
@@ -70,7 +90,7 @@ main = hakyllWith config $ do
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let writingsCtx =
-                    listField "posts" postCtx (return posts) `mappend`
+                    listField "posts" (postCtxWithTags tags) (return posts) `mappend`
                     constField "title" "Writings"            `mappend`
                     defaultContext
 
@@ -100,3 +120,8 @@ postCtx =
     dateField "date" "%B %e, %Y"   `mappend`
     teaserField "teaser" "content" `mappend`
     defaultContext
+
+postCtxWithTags :: Tags -> Context String
+postCtxWithTags tags =
+    tagsField "processedTags" tags `mappend`
+    postCtx

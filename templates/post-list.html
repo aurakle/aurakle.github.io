@@ -2,8 +2,11 @@
     $for(posts)$
         <li>
             <a href="$url$">$title$</a> - $date$
+            $if(tags)$
+            <br/><sup>Tags: $processedTags$</sup>
+            $endif$
             $if(teaser)$
-                <sub>$teaser$</sub>
+            <br/><sub>$teaser$</sub>
             $endif$
         </li>
     $endfor$

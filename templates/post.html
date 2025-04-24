@@ -2,7 +2,10 @@
     <section class="header">
         Posted on $date$
         $if(author)$
-            by $author$
+        <br/>by $author$
+        $endif$
+        $if(tags)$
+        <br/>Tags: $processedTags$
         $endif$
     </section>
     <section>
