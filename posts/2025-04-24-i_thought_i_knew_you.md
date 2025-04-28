@@ -1,6 +1,6 @@
 ---
 title: I thought I knew you
-tags: poem
+tags: Poem (Medium)
 ---
 
 I thought I knew you<br/>

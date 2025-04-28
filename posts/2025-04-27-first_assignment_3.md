@@ -1,6 +1,6 @@
 ---
 title: 'First Assignment #3'
-tags: First Assignment (Series), serial
+tags: First Assignment (Series), The Feyric Armada (Setting), Serial (Medium)
 ---
 
 We dropped into a system with an aster presence today. 

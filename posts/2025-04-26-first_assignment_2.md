@@ -1,6 +1,6 @@
 ---
 title: 'First Assignment #2'
-tags: First Assignment (Series), serial
+tags: First Assignment (Series), The Feyric Armada (Setting), Serial (Medium)
 ---
 
 Oh we're off to a fuckin' start, ain't we?

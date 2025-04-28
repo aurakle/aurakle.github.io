@@ -1,6 +1,6 @@
 ---
 title: 'First Assignment #3 (Combat Log)'
-tags: First Assignment (Series), serial
+tags: First Assignment (Series), The Feyric Armada (Setting), Serial (Medium)
 ---
 
 [*recording started*]

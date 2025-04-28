@@ -1,6 +1,6 @@
 ---
 title: 'First Assignment #1'
-tags: First Assignment (Series), serial
+tags: First Assignment (Series), The Feyric Armada (Setting), Serial (Medium)
 ---
 
 First day. Can't say I'm not scared. Being assigned with Tiff is a Goddamned blessing, but the Starcleave is not a fleet ship. 
