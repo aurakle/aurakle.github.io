@@ -10,5 +10,5 @@ To refer to this site, you may embed the following HTML:
 ```html
 <a href="https://aurakle.github.io" target="_blank"><img src="https://aurakle.github.io/images/buttons/mine.png" alt="The Starwatch"/></a>
 ```
-Here's what it looks like!
+<span class="wobbly">Here's what it looks like!</span>
 <div class="button-gallery"><a href="/"><img src="/images/buttons/mine.png" alt="The Starwatch"/></a></div>
