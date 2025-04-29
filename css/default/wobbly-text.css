@@ -1,3 +1,9 @@
+span.wobbly {
+}
+
+span.wobbly span {
+}
+
 @keyframes spin {
     100% {
         transform: rotate(360deg);

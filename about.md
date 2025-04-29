@@ -14,7 +14,7 @@ A proud [NixOS](https://nixos.org), [Neovim](https://neovim.io), and [i3](https:
 
 ### toki pona
 
-lukin mun ni li sinpin pi sitelen lawa mute mi. taso ken la sina wile sona e *mi*. toki ni li ike, taso mi alasa pana e sona pona.
+ni lukin mun li sinpin pi sitelen lawa mute mi. taso ken la sina wile sona e *mi*. toki ni li ike, taso mi alasa pana e sona pona.
 
 mi jan Owa. mi jan tonsi pi ma Kanata. mi pilin pona tan toki pi ilo nanpa en pali pi lipu musi en lipu musi. ken la mi musi e sitelen tawa musi. mi toki e toki Inli. mi toki lili e toki Kanse e toki pona kin.
 
