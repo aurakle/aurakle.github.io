@@ -4,7 +4,7 @@ title: About
 
 ### English
 
-This Starwatch is my thoughts' face. But perhaps you wish to know who *I* am. The answer to that question is complex, but I shall do my best to explain.
+This <span class="wobbly">Starwatch</span> is my thoughts' face. But perhaps you wish to know who *I* am. The answer to that question is complex, but I shall do my best to explain.
 
 I am often referred to by the following common identifiers: Aurora, Aura, and Auri. I may at times be jokingly referred to as Aur by some folks. 
 I am a Canadian transgender student with a particular love for writing, programming, and reading. 
@@ -14,7 +14,7 @@ A proud [NixOS](https://nixos.org), [Neovim](https://neovim.io), and [i3](https:
 
 ### toki pona
 
-ni lukin mun li sinpin pi sitelen lawa mute mi. taso ken la sina wile sona e *mi*. toki ni li ike, taso mi alasa pana e sona pona.
+ni <span class="wobbly">lukin mun</span> li sinpin pi sitelen lawa mute mi. taso ken la sina wile sona e *mi*. toki ni li ike, taso mi alasa pana e sona pona.
 
 mi jan Owa. mi jan tonsi pi ma Kanata. mi pilin pona tan toki pi ilo nanpa en pali pi lipu musi en lipu musi. ken la mi musi e sitelen tawa musi. mi toki e toki Inli. mi toki lili e toki Kanse e toki pona kin.
 
