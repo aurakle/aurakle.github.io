@@ -2,6 +2,7 @@ let elements = document.querySelectorAll("span.wobbly");
 
 elements.forEach((element) => {
     let text = element.innerText;
+    element.ariaLabel = text;
     element.innerText = "";
 
     for (const ch of text) {
@@ -28,6 +29,5 @@ function nestedSpans(text, depth) {
         current = span;
     }
 
-    current.ariaLabel = text;
     return current;
 }
